@@ -2,7 +2,7 @@ var express = require('express'),
     app = express(),
     middleware = require('./middleware.js');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;  // process.env.PORT — heroku env variable for port to listen to
 
 
 
